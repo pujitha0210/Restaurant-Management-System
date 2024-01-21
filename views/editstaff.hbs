@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+</head>
+<body>
+
+    {{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{alert}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+{{#each rows}}
+<form  class="row g-3 needs-validation" method="POST" action="/staffpage" novalidate style="margin: 0px 100px 0px 100px;">
+
+<div class="col-6" >
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="floatingInput" placeholder="Staff ID " name="staff_id" value="{{this.staff_id}}">
+  <label for="floatingInput">Staff ID</label>
+</div>
+</div>
+<br>
+<div class="col-6">
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="floatingInput" placeholder="Staff Phone" name="staff_phone" value="{{this.staff_phone}}">
+  <label for="floatingInput">Staff Phone </label>
+</div>
+</div>
+<br>
+<div class="col-6">
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="floatingInput" placeholder="Staff Name" name="staff_name" value="{{this.staff_name}}">
+  <label for="floatingInput">Staff Name</label>
+</div>
+</div>
+<br>
+<div class="col-6">
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="floatingInput" placeholder="Staff Resignation " name="staff_resignation" value="{{this.staff_resignation}}">
+  <label for="floatingInput">Staff Resignation</label>
+</div>
+</div>
+<br>
+<div class="col-6">
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="floatingInput" placeholder="Staff Password " name="staff_password" value="{{this.staff_password}}">
+  <label for="floatingInput">Staff Password</label>
+</div>
+</div>
+<br>
+
+<div class="col-8 d-grid">
+    <button class="btn btn-primary" type="submit">Submit </button>
+</div>
+
+</form>
+{{/each}}
+ </div>
+
+
+
+          <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

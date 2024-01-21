@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.head {
+  height: 80px;
+  background-color: coral;
+  width: 100%;
+  position:fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo {
+  position: relative;
+  width: 25%;
+  background-color: coral;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content:left;
+  min-width: 135px;
+  margin-left: 10px;
+  font-size: larger;
+  letter-spacing: 0.3px;
+  height: 100%;
+}
+
+.navBar {
+  position: relative;
+  height: 100%;
+  width: 75%;
+}
+
+.head{
+  z-index: 1;
+}
+.navList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content:space-around; */
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  background-color: coral;
+}
+.navList li {
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.navList li a {
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+  text-decoration: none;
+  position: absolute;
+  transition: transform 0.3s;
+}
+
+.navList li a:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  color: black;
+}
+
+.restaurantImage{
+  margin-top: 80px;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+  width:50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.image-container{
+  background-color:black;
+  height: 100vh;
+}
+    </style>
+</head>
+<body>
+   <div class="container">
+        <header class="head">
+            <div class="logo">TKR RESTAURANT</div>
+            <div class="navBar">
+                    <ul class="navList">
+                        <li class="home"><a href="/homepage">Home</a></li>
+                        <li class="menu"><a href="/menupage">Menu</a></li>
+                        <li class="rating"><a href="/staffpage">Staff</a></li>
+                        <li class="owner"><a href="/paymentpage">Payment</a></li>
+                        <li class="owner"><a href="/orderspage">Orders</a></li>
+                        <li class="owner"><a href="/ratingpage">Rating</a></li>
+                    </ul>
+            </div>
+        </header>
+
+         
+        <main class="image-container"><img src="tkr-resto-logo.png" alt="" class="restaurantImage"></main>
+
+      
+        
+    </div>
+    
+</body>
+</html>

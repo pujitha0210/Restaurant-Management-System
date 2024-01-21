@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .restaurantImage{
+            background-repeat: no-repeat;
+            {{!-- background-size:contain; --}}
+            width: 100vw;
+            height: 100vh;
+        }
+        .head{
+            margin-top: 15px;
+            font-size: 40px;
+            text-shadow: 2px 2px 8px #000;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+        .main{
+            {{!-- height: 100vh; --}}
+            background-color: azure;
+            padding: 5rem;
+            padding-top:25px;
+             padding-bottom:25px;
+        }
+        .contact{
+            height:300px;
+            background-color: red;
+        }
+        .footer{
+            height: 70px;
+            background-color: black;
+            bottom :0px;
+            position:relative;
+        }
+        .footerList{
+            color:whitesmoke;
+            list-style-type: none;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+        }
+        .staff{
+            padding: 70px;
+            padding-top: 0px;
+            padding-bottom: 20px;
+            position: relative;
+            height: 500px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        img{
+            height: 250px;
+        }
+        .staffName{
+            text-align: center;
+        }
+        .menu{
+             padding: 70px;
+             padding-top: 0px;
+              position: relative;
+              height: 300px;
+              {{!-- width: 100vw; --}}
+             
+        }
+        .foodImg{
+            height: 200px;
+            width: 200px;
+        }
+        .foodOList{
+            height: 100%;
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: space-around;
+            overflow-y: hidden; 
+        }
+        .foodList{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+       <main class="image-container"><img src="tkr-resto-logo.png" alt="" class="restaurantImage"></main>
+       <h1 class="head">Welcome to TKR Restaurant</h1>
+       <div class="main">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repudiandae fugiat delectus architecto dignissimos perspiciatis voluptatum corrupti nisi consectetur dolor non, recusandae nam nostrum quam eos ipsam nesciunt sapiente obcaecati.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vitae voluptatibus, recusandae asperiores neque ut, impedit nam reprehenderit quia sint commodi velit. Debitis vero, id dolores harum nostrum saepe modi.
+        <div class="staff">
+            <h1 class="head">OUR STAFF</h1>
+            <div><img class="staffImg" src="https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h1 class="staffName">Hari</h1></div>
+            <div><img class="staffImg" src="https://images.pexels.com/photos/6937442/pexels-photo-6937442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+             <h1 class="staffName">Hari</h1></div>
+            <div><img class="staffImg" src="https://images.pexels.com/photos/8477745/pexels-photo-8477745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+             <h1 class="staffName">Hari</h1></div>
+             </div>
+        </div>
+        <div class="menu">
+            <h1>FOOD</h1>
+            <ul class="foodOList">
+                <li class="foodList"><img class="foodImg" src="https://images.pexels.com/photos/4224304/pexels-photo-4224304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
+                <li class="foodList"><img class="foodImg" src="https://images.pexels.com/photos/2147491/pexels-photo-2147491.jpeg?auto=compress&cs=tinysrgb&w=300" alt=""></li>
+                <li class="foodList"><img class="foodImg" src="https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg?auto=compress&cs=tinysrgb&w=300" alt=""></li>
+                <li class="foodList"><img class="foodImg" src="https://images.pexels.com/photos/5410410/pexels-photo-5410410.jpeg?auto=compress&cs=tinysrgb&w=300" alt=""></li>
+                <li class="foodList"><img class="foodImg" src="https://images.pexels.com/photos/5657754/pexels-photo-5657754.jpeg?auto=compress&cs=tinysrgb&w=300" alt=""></li>
+                <li class="foodList"><img class="foodImg" src="https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=300" alt=""></li>
+                <li class="foodList"><img class="foodImg" src="https://images.pexels.com/photos/17593640/pexels-photo-17593640/free-photo-of-food-restaurant-spoon-drinks.jpeg?auto=compress&cs=tinysrgb&w=300" alt=""></li>
+                <li class="foodList"><img class="foodImg" src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=300" alt=""></li>
+                <li class="foodList"><img class="foodImg" src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=300" alt=""></li>
+                <li class="foodList"><img class="foodImg" src="https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=300" alt=""></li>
+            </ul>
+        </div>
+       </div>
+       <div class="contact">
+        contact
+       </div>
+       <div  class="footer">
+        <ul class="footerList">
+            <li>Phone</li>
+            <li>Instagram</li>
+            <li>FaceBook</li>
+            <li>LinkedIn</li>
+        </ul>
+       </div>
+
+      
+    
+</body>
+</html>
